@@ -1,5 +1,5 @@
 //implementing break statement to come out from the loop
-package break_statement;
+package loops.break_statement;
 
 public class main {
     public static void main(String[] args)
