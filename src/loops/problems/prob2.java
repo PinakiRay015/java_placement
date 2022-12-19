@@ -10,9 +10,9 @@ public class prob2 {
 
         while(num!=0)
         {
-            int lastdigit = num%10;
+            int lastDigit = num%10;
             num =num/10;
-            System.out.print(lastdigit);
+            System.out.print(lastDigit);
 
         }
     }
