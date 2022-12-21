@@ -2,7 +2,7 @@
 
 package functions_and_methods.problems;
 import java.util.Scanner;
-public class prob1 {
+public class numSwap {
     public static void swap(int a , int b)
     {
         int temp = a;

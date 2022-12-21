@@ -2,7 +2,7 @@ package functions_and_methods.problems;
 
 import java.util.Scanner;
 
-public class prob3 {
+public class factorial {
     public static void fact(int num)
     {
         int f = 1;

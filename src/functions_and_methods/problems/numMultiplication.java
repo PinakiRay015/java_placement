@@ -1,7 +1,7 @@
 //java program to find the multiplication of two numbers
 package functions_and_methods.problems;
 import java.util.Scanner;
-public class prob2 {
+public class numMultiplication {
     public static int multiplication(int num1 , int num2)
     {
         int mul = num1*num2;
