@@ -1,7 +1,7 @@
 //java program to print the sum of odd integers and positive integers
 package loops.problems;
 import java.util.Scanner;
-public class prob5 {
+public class sumOfIntgers {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);

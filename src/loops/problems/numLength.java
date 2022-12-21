@@ -1,7 +1,7 @@
 //java program to finding the length of the number
 package loops.problems;
 import java.util.Scanner;
-public class prob1 {
+public class numLength {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);

@@ -3,7 +3,7 @@ package loops.problems;
 
 import java.util.Scanner;
 
-public class prob6 {
+public class numFactorial {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int fact = 1;
