@@ -1,3 +1,4 @@
+//java program to convert binary number to decimal number
 package conversions;
 import java.util.Scanner;
 public class binaryToDecimal {

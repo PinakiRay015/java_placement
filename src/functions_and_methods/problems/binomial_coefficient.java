@@ -1,4 +1,4 @@
-//java program to calculate the
+//java program to calculate the binomial coefficient
 package functions_and_methods.problems;
 
 import java.util.Scanner;
