@@ -4,6 +4,11 @@ package oneD_Array;
 import java.util.Scanner;
 
 public class arrayPart1 {
+    public static int percentage(int num1 , int num2 , int num3)
+    {
+        int ans = (num1+num2+num3)/3;
+        return ans;
+    }
     public static void main(String[] args) {
         int[] marks = new int[100];
         Scanner sc = new Scanner(System.in);
@@ -22,5 +27,8 @@ public class arrayPart1 {
         System.out.println("\nEnter the updated mark of mathematics");
         marks[2] = sc.nextInt();
         System.out.println("Your marks in now in mathematics is "+marks[2]);
+
+        //Finding the percentage
+        System.out.println("Your percentage is "+percentage(marks[0] , marks[1] , marks[2])+"%");
     }
 }
