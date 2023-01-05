@@ -1,3 +1,4 @@
+//java program to store the marks of phys , chem and maths in an array if one dimensional
 package oneD_Array;
 
 import java.util.Scanner;
