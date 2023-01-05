@@ -17,5 +17,10 @@ public class arrayPart1 {
         System.out.println("Your marks in chemistry is "+marks[1]);
         System.out.println("Your marks in physics is "+marks[0]);
         System.out.println("Your marks in mathematics is "+marks[2]);
+
+        //updating of values in array
+        System.out.println("\nEnter the updated mark of mathematics");
+        marks[2] = sc.nextInt();
+        System.out.println("Your marks in now in mathematics is "+marks[2]);
     }
 }
