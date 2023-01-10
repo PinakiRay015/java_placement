@@ -2,7 +2,7 @@ package oneD_Array;
 
 import java.util.Scanner;
 public class linearSearch {
-    public static int mysearch(int []numbers , int key)
+    public static int mySearch(int []numbers , int key)
     {
         for(int i =0 ; i<numbers.length ; i++)
         {
@@ -23,7 +23,7 @@ public class linearSearch {
         }
         System.out.println("\nEnter the key");
         int key = sc.nextInt();
-        int position = mysearch(array , key);
+        int position = mySearch(array , key);
         if(position==-1)
         {
             System.out.println("Not found");
