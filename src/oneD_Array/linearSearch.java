@@ -1,3 +1,4 @@
+//java program to perform linear search in an one dimensional array
 package oneD_Array;
 
 import java.util.Scanner;
