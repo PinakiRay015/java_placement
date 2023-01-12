@@ -27,7 +27,7 @@ public class binarySearch {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        int []array = {2 , 4 , 6 , 8 , 10 ,12 ,14};
+        int []array = {2 , 4 , 6 , 8 , 10 , 12 , 14};
         System.out.println("Here is your sorted array");
         for(int i = 0 ; i < array.length ; i++)
         {
