@@ -1,26 +1,26 @@
-//java program to find the largest element in an array
+//java program to find the largest element in an one dimensional array
 package oneD_Array;
-import java.util.Scanner;
+import java.util.*;
 public class largestNum {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int larest = 0;
-        System.out.println("Enter the size of the array");
-        int size = sc.nextInt();
-        int []array = new int[size];
-        for(int i = 0 ; i< array.length ; i++)
+    public static int getLargest(int []array)
+    {
+        int largest = Integer.MIN_VALUE; //setting the value lowest i.e. minus infinity
+        for(int i = 0 ; i<array.length ; i++)
         {
-            array[i] = sc.nextInt();
-        }
-        System.out.println("Here is your array");
-        for(int i =0 ; i< array.length ; i++)
-        {
-            System.out.print(array[i]+"\t");
-            if(larest<array[i])
+            if(largest<array[i])
             {
-                larest = array[i];
+                largest = array[i];
             }
         }
-        System.out.println("\nThe largest element is "+larest);
+        return largest;
+    }
+    public static void main(String[] args) {
+        int [] array = {14 , 5 , 67 , 21 , 67 , 83 , 54 , 34 , 3 , 7 , 2};
+        System.out.println("Here is your array");
+        for(int i =0  ; i<array.length ; i++)
+        {
+            System.out.print(array[i]+"\t");
+        }
+        System.out.println("\nThe largest element is "+getLargest(array));
     }
 }
