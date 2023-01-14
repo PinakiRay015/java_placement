@@ -22,5 +22,8 @@ public class arrayPairs {
         }
         System.out.println("\nHere is ur pairs");
         pairing(array);
+        System.out.println("The total number of pair is :-");
+        int tp = (array.length*(array.length-1))/2;
+        System.out.println(tp);
     }
 }
