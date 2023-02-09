@@ -1,7 +1,7 @@
-//java program to perform binary sort , selection sort , counting sort in decrease order
+//java program to perform bubble sort in decrease order
 package sorting.problem;
 
-public class sortingInDecrease {
+public class bubbleSortDecrease {
     public static void bubbleSort(int []array)
     {
         for(int turn = 0 ; turn<array.length-1 ; turn++)
@@ -18,6 +18,7 @@ public class sortingInDecrease {
         }
     }
 
+
     public static void display(int []array)
     {
         for(int i=0 ; i<array.length ; i++)
@@ -29,8 +30,9 @@ public class sortingInDecrease {
     {
         int []array = {3 , 6 , 2 , 1 , 8 , 7 , 4 , 5 , 3 , 1};
         display(array);
-        bubbleSort(array);
         System.out.println("The array sorted in bubble sort 👇\n");
+        bubbleSort(array);
         display(array);
+
     }
 }
