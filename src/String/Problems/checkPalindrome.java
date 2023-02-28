@@ -1,5 +1,5 @@
 //java program to check a String is palindrome or not
-package String;
+package String.Problems;
 
 import java.util.Scanner;
 
