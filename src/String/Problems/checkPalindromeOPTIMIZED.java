@@ -5,7 +5,7 @@ public class checkPalindromeOPTIMIZED {
     public static boolean checkPalindrome(String str)
     {
         int length = str.length();
-        for(int i = 0 ; i<length-1-i ; i++)
+        for(int i = 0 ; i<str.length()/2 ; i++)
         {
             if(str.charAt(i) != str.charAt(length-1-i))
             {
@@ -15,7 +15,7 @@ public class checkPalindromeOPTIMIZED {
         return true;
     }
     public static void main(String[] args) {
-        String str = "rohan";
+        String str = "A man, a plan, a canal: Panama";
         System.out.println(checkPalindrome(str));
     }
 }
