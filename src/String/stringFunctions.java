@@ -1,3 +1,4 @@
+//java program to illustrate some basic functions of a string
 package String;
 
 public class stringFunctions {
