@@ -1,3 +1,4 @@
+//java program to check whether a String is palindrome or not in a BETTER way
 package String.Problems;
 
 public class checkPalindromeOPTIMIZED {
