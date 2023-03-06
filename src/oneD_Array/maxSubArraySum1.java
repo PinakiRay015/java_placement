@@ -1,7 +1,7 @@
-//java program to find the maximum sub of the sub array
+//java program to find the maximum sub of the sub array(brute Force)
 package oneD_Array;
 
-public class maxSubArraySum {
+public class maxSubArraySum1 {
     public static int getMaxSum(int [] array)
     {
         int maxSum = Integer.MIN_VALUE;
@@ -20,7 +20,7 @@ public class maxSubArraySum {
         return maxSum;
     }
     public static void main(String[] args) {
-        int []array = {2,4,6,8,10};
+        int []array = {-2,1,-3,4,-1,2,1,-5,4};
         System.out.println("The maximum sum of the sub array is "+getMaxSum(array));
     }
 }
