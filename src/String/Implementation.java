@@ -14,7 +14,7 @@ public class Implementation {
         System.out.println("Enter the name");
         String str3 = sc.nextLine();
         System.out.println(str1);
-        System.out.println(str2);
+        System.out.println(str3);
         System.out.println(str3);
     }
 }
