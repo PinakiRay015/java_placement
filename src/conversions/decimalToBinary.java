@@ -1,8 +1,5 @@
 //java program to convert the decimal number into binary number;
 package conversions;
-
-import java.util.Scanner;
-
 public class decimalToBinary {
     public static int dectobin(int dec)
     {
@@ -18,9 +15,7 @@ public class decimalToBinary {
         return binary;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number in decimal");
-        int dec = sc.nextInt();
+        int dec = 4;
         System.out.println(dectobin(dec));
     }
 }
