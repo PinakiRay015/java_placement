@@ -1,6 +1,5 @@
 //java program to convert binary number to decimal number
 package conversions;
-import java.util.Scanner;
 public class binaryToDecimal {
     public static int convert(int num)
 
@@ -17,9 +16,7 @@ public class binaryToDecimal {
         return decimal;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the binary number");
-        int binNum = sc.nextInt();
+        int binNum = 100;
         System.out.println(convert(binNum));
     }
 }
