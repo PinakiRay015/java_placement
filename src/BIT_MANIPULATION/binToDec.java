@@ -17,7 +17,7 @@ public class binToDec {
     }
     public static void main(String[] args)
     {
-        int bin = 1001;
+        int bin = 10100;
         System.out.println(getDec(bin));
     }
 }
