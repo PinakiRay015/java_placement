@@ -4,7 +4,7 @@ package String.Problems;
 public class LargestString {
     public static void main(String[] args)
     {
-        String []fruits = {"Apple" , "Mango" , "Grape"};
+        String []fruits = {"java" , "hello"};
         String largest = fruits[0];
         for(int i = 1 ; i<fruits.length ; i++)
         {
