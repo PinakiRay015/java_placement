@@ -1,4 +1,4 @@
-//java prpgram to check the repeated number in an array
+//java program to check the repeated number in an array
 package oneD_Array.problems;
 
 import java.util.Arrays;
@@ -13,11 +13,12 @@ public class repeatNum {
             {
                 return true;
             }
+            break;
         }
         return false;
     }
     public static void main(String[] args) {
-        int []array = {1,2,3,1};
+        int []array = {1 ,1, 1, 3, 3, 4, 3, 2, 4, 2};
         System.out.println(checkRepeat(array));
     }
 }
