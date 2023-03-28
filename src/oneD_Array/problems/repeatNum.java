@@ -1,36 +1,23 @@
-//Given an integer array nums, return true if any
-//value appears at least twice in the array, and return false if
-// every element is distinct.
+//java prpgram to check the repeated number in an array
 package oneD_Array.problems;
-import java.util.*;
+
+import java.util.Arrays;
+
 public class repeatNum {
-    public static String checkRepeat(int []array)
+    public static Boolean checkRepeat(int []array)
     {
-        String ans = "False";
-        System.out.println("Here is your array");
-        for(int i=0 ; i<array.length ; i++)
+        Arrays.sort(array);
+        for(int i = 0 ; i<array.length-1 ; i++)
         {
-            System.out.print(array[i]+"\t");
-            for(int j=i+1 ; j<array.length ; j++)
+            if(array[i]==array[i+1])
             {
-                if(array[i]==array[j])
-                {
-                    ans = "True";
-                }
+                return true;
             }
         }
-        return ans;
+        return false;
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of the array");
-        int size = sc.nextInt();
-        int []array = new int[size];
-        System.out.println("Enter the elements to insert in the array");
-        for(int i = 0 ; i<array.length ; i++)
-        {
-            array[i] = sc.nextInt();
-        }
-        System.out.println("\n"+checkRepeat(array));
+        int []array = {1,2,3,1};
+        System.out.println(checkRepeat(array));
     }
 }
