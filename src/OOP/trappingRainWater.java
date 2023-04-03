@@ -3,9 +3,8 @@ package OOP;
 
 public class trappingRainWater {
     public static void main(String[] args) {
-        int []height = {0, 1, 0,  2, 1, 0, 1, 3, 2, 1, 2, 1};
         rainWater rainWater = new rainWater();
-        rainWater.setTrappedWater(height);
+        rainWater.setTrappedWater(rainWater.getHeight());
         System.out.println(rainWater.getTrappedWater());
     }
 }
@@ -14,12 +13,18 @@ class rainWater
 {
     int trappedWater;
 
+    public int[] getHeight() {
+        return height;
+    }
+
+    private int []height = {0, 1, 0,  2, 1, 0, 1, 3, 2, 1, 2, 1};
+
     public int getTrappedWater() {
         return trappedWater;
     }
 
-     void setTrappedWater(int []height) {
-        int n = height.length;
+     void setTrappedWater(int [] height) {
+        int n = this.height.length;
         int []leftmax = new int[n];
         leftmax[0] = height[0];
         for(int i = 1 ; i<leftmax.length ; i++)
