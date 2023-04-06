@@ -1,5 +1,5 @@
 //java program to illustrate custom constructor
-package OOP;
+package OOP.constructor;
 
 public class constructors {
     public static void main(String[] args) {
@@ -15,5 +15,6 @@ class myStudent
     public myStudent(String name)
     {
         this.name = name;
+        System.out.println("Constructor is called!!");
     }
 }
