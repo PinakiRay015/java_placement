@@ -1,3 +1,4 @@
+//single level inheritance
 package OOP.Inheritance;
 class android
 {
@@ -18,7 +19,7 @@ class samsung extends android
         System.out.println("Welcome to galaxy");
     }
 }
-public class inheritance1 {
+public class singleLevel {
     public static void main(String[] args)
     {
         samsung s1 = new samsung();
