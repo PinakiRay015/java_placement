@@ -3,42 +3,31 @@ package OOP.myInterfaces;
 public class sample1 {
     public static void main(String[] args)
     {
-        color c = new color();
-        c.design();
-        c.company();
-        c.capacity();
+        myCar c = new myCar();
+        c.seatCapacity();
         c.color();
     }
 }
 
-interface myCar
+interface BMW
 {
-    public void design();
-    public void company();
+    public void color();
 }
 
-class seatCapacity
+interface AUDI
 {
-    public void design()
-    {
-        System.out.println("This is open roof");
-    }
-
-    public void capacity()
-    {
-        System.out.println("This comes with 2 seater");
-    }
-
-    public void company()
-    {
-        System.out.println("BMW");
-    }
+    public void seatCapacity();
 }
 
-class color extends seatCapacity implements myCar
+class myCar implements BMW , AUDI
 {
     public void color()
     {
-        System.out.println("This comes with black and red color");
+        System.out.println("It comes with black and red color");
+    }
+
+    public void seatCapacity()
+    {
+        System.out.println("It has 2 seater capacity");
     }
 }
