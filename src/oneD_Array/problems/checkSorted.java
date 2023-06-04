@@ -1,4 +1,4 @@
-//java program to check if an array is sorted or not
+//java program to check if a given array is sorted or not
 package oneD_Array.problems;
 
 public class checkSorted {
@@ -21,8 +21,8 @@ public class checkSorted {
     }
     public static void main(String[] args)
     {
-        int []arr = {10 , 20 , 30 , 60 , 50};
-        int n = arr.length;
-        System.out.println(checkArray(arr , n));
+        int []array = {10 , 20 , 30 , 60 , 50};
+        int n = array.length;
+        System.out.println(checkArray(array , n));
     }
 }
