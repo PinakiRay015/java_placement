@@ -17,8 +17,8 @@ public class firstOccurrence {
     }
     public static void main(String[] args)
     {
-        int []array = {21 , 32 , 51 , 70 , 71};
-        int key = 32;
+        int []array = {8 , 3 , 6 , 9 , 5 , 10 , 2 , 5 , 3};
+        int key = 5;
         int position = Occurrence(array , key , 0);
         System.out.println((position == -1) ? "not found" : position);
     }
