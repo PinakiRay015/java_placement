@@ -1,4 +1,4 @@
-//java program to find the max subArray sum by prefix sum method
+//java program to find the max subArray sum by prefix-Sum method
 package oneD_Array;
 
 public class maxSubArray2 {
