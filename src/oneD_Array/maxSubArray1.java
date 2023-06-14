@@ -22,7 +22,7 @@ public class maxSubArray1 {
     }
     public static void main(String[] args)
     {
-        int[] array = {2 , 4 , 6 , 8 , 10};
+        int []array = {1 , -2 , 6 , -1 , 3};
         System.out.println(myMax1(array));
     }
 }
