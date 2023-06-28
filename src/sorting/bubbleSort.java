@@ -1,40 +1,29 @@
-//java program to perform bubble sort
 package sorting;
 
+import java.util.Arrays;
+
 public class bubbleSort {
-    public static void myBubbleSort(int []array)
+    public static int [] myBubbleSort(int []array)
     {
         for(int turn = 0 ; turn<array.length-1 ; turn++)
         {
-            for(int j = 0 ; j<array.length-1-turn ; j++)
+            for(int i=0 ; i<array.length-1-turn ; i++)
             {
-                if(array[j]>array[j+1])
+                if(array[i] > array[i+1])
                 {
-                    int temp = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = temp;
+                    //swapping
+                    int temp = array[i];
+                    array[i] = array[i+1];
+                    array[i+1] = temp;
                 }
             }
         }
-    }
 
-    public static void displayArray(int []array)
-    {
-        for(int i = 0 ; i<array.length ; i++)
-        {
-            System.out.print(array[i]+"\t");
-        }
+        return array;
     }
-    public static void main(String [] args)
-    {
-        int []array = {5 , 4 , 1 , 3 , 2};
-        System.out.println("Here is ur unsorted array");
-        for(int i = 0 ; i<array.length ; i++)
-        {
-            System.out.print(array[i]+"\t");
-        }
-        myBubbleSort(array);
-        System.out.println("\nHere is ur sorted array");
-        displayArray(array);
+    public static void main(String[] args) {
+        int []array = {5,4,1,3,2};
+        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.toString(myBubbleSort(array)));
     }
 }
