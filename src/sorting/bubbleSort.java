@@ -7,7 +7,7 @@ public class bubbleSort {
     {
         for(int turn = 0 ; turn<array.length-1 ; turn++)
         {
-            for(int i=0 ; i<array.length-1-turn ; i++)
+            for(int i=0 ; i<array.length-turn-1 ; i++)
             {
                 if(array[i] > array[i+1])
                 {
