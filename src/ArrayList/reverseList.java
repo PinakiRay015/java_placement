@@ -11,10 +11,10 @@ public class reverseList {
         list.add(30);
         list.add(40);
 
-        System.out.println(list);
+        System.out.println("This is the normal List "+ list);
 
         Collections.reverse(list);
 
-        System.out.println(list);
+        System.out.println("This is the reversed List "+list);
     }
 }
