@@ -1,4 +1,4 @@
-//java program to find the largest string according to lexicographical order
+//java program to find the largest string according to lexicographical format
 package String;
 
 public class largestString {
