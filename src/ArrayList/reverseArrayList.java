@@ -1,9 +1,6 @@
 //java program to reverse an array list
 package ArrayList;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class reverseArrayList {
     public static void main(String[] args) {
