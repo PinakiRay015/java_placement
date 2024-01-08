@@ -10,7 +10,7 @@ public class pairSum1 {
         int first = 0;
         int last = list.size()-1;
 
-        while(first < last)
+        while(first != last)
         {
             int sum = list.get(first) + list.get(last);
             if(sum == target)
