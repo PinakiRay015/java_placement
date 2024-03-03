@@ -23,9 +23,21 @@ public class Sample1 {
             newNode.next = head;
             head = newNode;
         }
+
+        public void addLast(int data)
+        {
+            Node newNode = new Node(data);
+            if(head==null)
+            {
+                head=tail=newNode;
+            }
+            tail.next = newNode;
+            tail = newNode;
+        }
     public static void main(String[] args) {
         Sample1 s1 = new Sample1();
         s1.addFirst(1);
         s1.addFirst(2);
+        s1.addLast(100);
     }
 }
