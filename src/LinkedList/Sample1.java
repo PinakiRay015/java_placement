@@ -35,10 +35,21 @@ public class Sample1 {
             tail.next = newNode;
             tail = newNode;
         }
+
+        public void display()
+        {
+            Node temp = head;
+            while(temp!=null)
+            {
+                System.out.print(temp.data+" ");
+                temp = temp.next;
+            }
+        }
     public static void main(String[] args) {
         Sample1 s1 = new Sample1();
         s1.addFirst(1);
         s1.addFirst(2);
         s1.addLast(100);
+        s1.display();
     }
 }
