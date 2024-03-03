@@ -30,6 +30,7 @@ public class Sample1 {
             if(head==null)
             {
                 head=tail=newNode;
+                return;
             }
             tail.next = newNode;
             tail = newNode;
