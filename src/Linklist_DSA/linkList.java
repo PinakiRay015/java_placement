@@ -72,13 +72,16 @@ public class linkList {
     }
 
     //displaying element
+    int size;
     public void display()
     {
+        size = 0;
         Node temp = head;
         while(temp!=null)
         {
             System.out.print(temp.data+" ");
             temp = temp.next;
+            size++;
         }
     }
     public static void main(String[] args) {
@@ -95,5 +98,6 @@ public class linkList {
         System.out.println("\nAdding the element at middle");
         ll.addMiddle(2 , 500);
         ll.display();
+        System.out.println("\nSize of the link list is "+ll.size);
     }
 }
