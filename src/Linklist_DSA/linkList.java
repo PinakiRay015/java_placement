@@ -17,6 +17,19 @@ public class linkList {
     public static Node head;
     public static Node tail;
 
+    public void createNode()
+    {
+        Node Node1 = new Node(10);
+        Node Node2 = new Node(20);
+        Node Node3 = new Node(30);
+
+        Node1.next = Node2;
+        Node2.next = Node3;
+
+        head = Node1;
+        tail = Node3;
+    }
+
     //adding the element at first
     public void addFirst(int data)
     {
@@ -55,12 +68,14 @@ public class linkList {
     }
     public static void main(String[] args) {
         linkList ll = new linkList();
-        ll.addFirst(1);
-        ll.addFirst(2);
+        System.out.println("Creating a node");
+        ll.createNode();
+        ll.display();
+        System.out.println("\nAdding the element at first");
         ll.addFirst(5);
         ll.display();
         ll.addLast(56);
-        System.out.println("");
+        System.out.println("\nAdding the element at last");
         ll.display();
     }
 }
