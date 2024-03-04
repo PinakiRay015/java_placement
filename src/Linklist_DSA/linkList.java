@@ -43,7 +43,7 @@ public class linkList {
         head=newNode;
     }
 
-    //adding elements at the end
+    //adding the element at the end
     public void addLast(int data)
     {
         Node newNode = new Node(data);
@@ -54,6 +54,21 @@ public class linkList {
         }
         tail.next = newNode;
         tail = newNode;
+    }
+
+    //adding the element at the middle
+    public void addMiddle(int index, int data)
+    {
+        Node temp = head;
+        int i = 0;
+        while(i<index-1)
+        {
+            temp = temp.next;
+            i++;
+        }
+        Node newNode = new Node(data);
+        newNode.next = temp.next;
+        temp.next = newNode;
     }
 
     //displaying element
@@ -74,8 +89,11 @@ public class linkList {
         System.out.println("\nAdding the element at first");
         ll.addFirst(5);
         ll.display();
-        ll.addLast(56);
         System.out.println("\nAdding the element at last");
+        ll.addLast(56);
+        ll.display();
+        System.out.println("\nAdding the element at middle");
+        ll.addMiddle(2 , 500);
         ll.display();
     }
 }
