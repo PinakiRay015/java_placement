@@ -77,14 +77,43 @@ public class linklist {
 
     public static int deleteFirst()
     {
+        if(size==0)
+        {
+            System.out.println("======Linked list is empty======");
+            return -1;
+        }
         int val = head.data;
         head = head.next;
         System.out.println("======Element deleted======");
         size--;
         return val;
-
     }
 
+    public static int deleteLast()
+    {
+        if(size==0)
+        {
+            System.out.println("Linked list is empty");
+            return -1;
+        } else if (size==1) {
+            int val = head.data;
+            head=tail=null;
+            size--;
+            System.out.println("======element deleted======");
+            return val;
+        }
+        Node temp = head;
+        for(int i=0 ; i<size-2 ; i++)
+        {
+            temp = temp.next;
+        }
+        int val = temp.next.data;
+        temp.next = null;
+        tail = temp;
+        size--;
+        System.out.println("======element deleted======");
+        return val;
+    }
     public void display()
     {
         Node temp = head;
@@ -111,6 +140,7 @@ public class linklist {
             System.out.println("3->Add element at first");
             System.out.println("4->Add element at middle");
             System.out.println("5->Delete at first");
+            System.out.println("6->Delete at last");
             System.out.println("0->quit");
             System.out.println("Enter the option");
             int value = sc.nextInt();
@@ -121,6 +151,7 @@ public class linklist {
                 case 3->ll.addFirst();
                 case 4->ll.addMiddle();
                 case 5->ll.deleteFirst();
+                case 6->ll.deleteLast();
                 case 0 -> {
                     return;
                 }
