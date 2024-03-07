@@ -75,6 +75,23 @@ public class linklist {
         System.out.println("======Element added at "+index+" position======");
     }
 
+    public void addLast()
+    {
+        System.out.println("Enter the element");
+        int data = sc.nextInt();
+        Node newNode = new Node(data);
+        size++;
+        if(head==null)
+        {
+            head=tail=newNode;
+            return;
+        }
+        tail.next = newNode;
+        tail = newNode;
+        System.out.println("======Element added at last======");
+
+    }
+
     public static int deleteFirst()
     {
         if(size==0)
@@ -139,8 +156,9 @@ public class linklist {
             System.out.println("2->Display link list");
             System.out.println("3->Add element at first");
             System.out.println("4->Add element at middle");
-            System.out.println("5->Delete at first");
-            System.out.println("6->Delete at last");
+            System.out.println("5->Add element at last");
+            System.out.println("6->Delete at first");
+            System.out.println("7->Delete at last");
             System.out.println("0->quit");
             System.out.println("Enter the option");
             int value = sc.nextInt();
@@ -150,8 +168,9 @@ public class linklist {
                 case 2->ll.display();
                 case 3->ll.addFirst();
                 case 4->ll.addMiddle();
-                case 5->ll.deleteFirst();
-                case 6->ll.deleteLast();
+                case 5->ll.addLast();
+                case 6->ll.deleteFirst();
+                case 7->ll.deleteLast();
                 case 0 -> {
                     return;
                 }
